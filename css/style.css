@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    border: black;
+  background-color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+   height: 100%;
+   justify-content: center;
+}
+main{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4CAF50;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+#Ranger_login{
+    display: flex;
+    width: 50;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+.lateral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:#f6f6f6;
+    color: #4CAF50;
+    width: 70%;
+    max-height: 100%;
+
+}
+#logo_login{
+  max-width: 120px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.campoUsuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 15px 20px;
+}
+.campoSenha{
+    border: 2px solid black;
+    display: flex;
+    
+}
+
+.toggle_container{
+    display: flex;
+    font-size: 15px;
+    gap: 15px;
+    align-items: center;
+    justify-content: end;
+}
+.toggle-checkbox {
+    display: none;  
+}
+
+.toggle-label {
+    display: flex;
+    flex-direction: column;
+    align-items: r;
+    align-items: center;
+    width: 30px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4CAF50;
+}
+
+.toggle-checkbox:checked + .toggle-label::before {
+    transform: translateX(30px);
+}
+.btn_login{
+    display: flex;
+    justify-content: center;
+
+}
+#enviar{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
