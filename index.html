@@ -5,58 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Raíssa Mara Alves Gomes Santana">
     <meta name="description" content="Site criado para desafio da Sprint Angular">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&text=person,lock,info" />
+    
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=lock" />
-
     <title>Projeto Angular Ford</title>
-
 </head>
 
 <body>
     <header>
-        <div></div>
+        <img id="logo_login" src="img/ford.png" alt="Logo da Ford">
     </header>
-    <main class="central">  
 
-        
-               <div class="lateral">
-            
-            <img id="logo_login" src="img/ford.png" alt="Logo da autentificação">
-            
+    <main class="container-login">
+
+        <div class="coluna-imagem">
+            <img id="Ranger_login" src="img/ranger.png" alt="Imagem da ranger">
+        </div>
+
+        <div class="coluna-formulario">
             <h3>Boas-vindas</h3>
             
             <form action="/login" method="POST">
-                <div class="CampoUsuario">
-                    <label for="login"></label>
-                    <img src="img/person_icons.png" alt="person_icons">
+                
+                <div class="input-container">
+                    <span class="material-symbols-outlined">person</span>
                     <input type="text" id="login" name="usuario" required placeholder="Insira seu e-mail">
-                    <img src="img/info_icons.png" alt="info_icons">
+                    <span class="material-symbols-outlined">info</span>
                 </div>
-                <div class="CampoSenha">
-                    <label for="senha"></label>
-                    <img src="img/password_icons.png" alt="password_icons">
+                
+                <div class="input-container">
+                    <span class="material-symbols-outlined">lock</span>
                     <input type="password" id="senha" name="senha" required placeholder="Insira sua senha">
-                    <img src="img/info_icons.png" alt="info_icons">
+                    <span class="material-symbols-outlined">info</span>
                 </div>
 
-    <div class="toggle_container">         
-        <p>Logar automaticamente</p>
-        <input type="checkbox" id="meu_toggle" class="toggle-checkbox">
-        <label for="meu_toggle" class="toggle-label"></label>
-        <img src="img/info_icons.png" alt="info_icons" class="info-icon">
-    </div>  
+                <div class="toggle_container">
+                    <p>Logar automaticamente</p>
+                    <input type="checkbox" id="meu_toggle" class="toggle-checkbox">
+                    <label for="meu_toggle" class="toggle-label"></label>
+                    <img src="img/info_icons.png" alt="info_icons" class="info-icon">
+                </div>
                 
                 <div class="btn_login">
-                    <button id="enviar"  type="submit" >Entrar</button>
+                    <button id="enviar" type="submit">Entrar</button>
                 </div>
             </form>
-                    </div>
-        
-        <img id="Ranger_login" src="img/ranger.png" alt="Imagem da ranger na autentificação">
+        </div>
         
     </main>
+
     <footer>
-        <div></div>
+        <p>Fonte: Ford (2022).</p>
     </footer>
 </body>
 </html>
