@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    border: black;
     background-color: #FFFFFF;
     font-family: 'Arial', sans-serif;
     font-size: 18px;
@@ -16,7 +15,6 @@ body{
     justify-content: center;
 }
 header{
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -78,7 +76,6 @@ header{
     padding-left: 11px; 
 }
 main{
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
